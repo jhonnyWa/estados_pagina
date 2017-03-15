@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+	box-sizing: border-box;
+}
+img{
+display: block;
+max-width: 100%;
+}
+body{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Yanone Kaffeesatz', sans-serif;
+letter-spacing: 1.5px;
+}
+
+.section__titulo{
+	text-align: center;
+	font-size: 40px;
+	color: #FBA919;
+}
+
+.contenedor{
+	margin: auto;
+	width: 98%;
+}
+
+/*estilos qe das para el menu dentro del contenedor*/
+
+.header{
+	height: 60px;
+}
+.header.contendor{
+	display: flex;
+	justify-content: space-between;
+}
+.logo, .icon-menu {
+	margin: 5px;
+}
+.icon-menu{
+display: block;
+width: 40px;
+height: 40px;
+font-size: 30px;
+background: #FBA919;
+color: #fff;
+text-align: center;
+line-height: 40px;
+border-radius: 5px;
+margin-left: auto;
+cursor: pointer;
+}
+
+.nav{
+	position: absolute;
+	top: 80px;
+	left: -100%;
+	width: 100%;
+	transition: all 1.5s;
+}
+
+.menu{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu__link{
+	display: block;
+	padding: 20px;
+	background: #FBA919;
+	text-decoration: none;
+	color: #fff;
+}
+.menu__link:hover {
+	background: white;
+	color: #FBA919;
+}
+
+.mostrar{
+	left: 0;
+}
+.select{
+	background: white:;
+	color: #FBA919;
+}
+/*estilos del banner para el menu y su transicion*/
+
+.banner{
+margin-top: -60px;
+position: relative;
+z-index: -1000;
+}
+
+.banner .contenedor{
+position: absolute;
+top: 50%;
+left: 58%;
+transform: translateX(-60%) translateY(-60%);
+width: 100%;
+color: #fff;
+text-align: center;
+}
+
+.banner__txt{
+	display: none;
+}
+
+.info__columna{
+	background: #FBA919;
+	color: #fff;
+	padding: 15px;
+	margin-bottom: 30px;
+}
+
+
+/*estilos de estados*/
+
+.cursos__columna{
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.cursos__descripcion{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.5);
+	width: 25%;
+	padding: 5px;
+}
+
+.cursos__titutlo{
+	font-size: 25px;
+	margin: 5px 0;
+}
+.footer{
+	background: #333;
+	color: #fff;
+	text-align: center;
+}
+
+
+@media(min-width: 480px){
+	.logo{
+		font-size: 40px;
+
+	}
+	.banner__titulo{
+		font-size: 30px;
+		margin: 5px 0;
+
+	}
+	.banner__txt{
+		display: block;
+		font-size: 20px;
+		margin: 7px 0;
+	}
+
+	.info, .cursos {
+		display: flex; 
+		justify-content: space-between;
+		margin-top: -100px;
+	}
+	.info__columna{
+		width: 32%;
+	}
+	.info__titutlo{
+		font-size: 30px;
+		margin: 5px 0;
+	}
+	.section__titulo{
+	width: 100px;
+}
+	.cursos {
+		flex-wrap: wrap;
+		margin-top: 0;
+}
+.cursos__columna{
+	width: 48%;
+}
+@media (min-width: 768px) {
+	.contenedor{
+		width: 1000px;
+	}
+	.banner__titutlo{
+		font-size: 30px;
+	}
+	.cursos__titulo{
+		font-size: 30px;
+
+	}
+	@media (min-width: 1024px) {
+		.contenedor{
+			width: 1000px;
+		}
+		.section__titulo{
+			font-size: 50px;
+		}
+	.nav{
+		position: static;
+		width: auto;
+
+	}
+	.menu{
+		display: flex;
+	}
+
+	.icon-menu{
+		display: none;
+	}
+	.menu__link{
+		background: none;
+		font-size: 30px;
+	}
+	.select{
+		color: #fff;
+		background: #FBA919;
+	}
+	.banner__titutlo{
+		font-size: 60px;
+	}
+	.info__titulo{
+		font-size: 40px;
+		text-align: center;
+	}
+	.cursos__titulo{
+		font-size: 30px;
+		
+	}
+}
+
+}
+
+
